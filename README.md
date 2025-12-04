@@ -16,10 +16,13 @@ Policymakers can also leverage the strong influence of job type and education by
 Also, the results show that the hybrid model (AUC = 0.854) performs far better than the best single model, XGBoost (AUC = 0.665). This large improvement indicates that combining multiple algorithms captures more complex patterns that a single model cannot learn on its own. Overall, the findings strongly support the study objective by demonstrating that hybrid-based ML models offer significantly higher predictive power for bank-account classification.
 
 ## ML Practices Performed
-1. Data Cleaning; This involves checking for missing values, duplicates and data types. Practices like removing duplicates, imputing missing values using statistical measures such as mean, median and mode are performed on the data. Also, data types are checked to ensure there is consistency.
-2. Descriptive statistics
-3. Exploratory Data Analysis; this is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
-5. Feature Engineering and Selection; Here, variable encoding, scaling and selection is performed. Label encoding is conducted on ordinal and/or binary variables, One hot encoding is performed on nominal variables, then a variable importance analysis is performed to select the most important features to be used in a model.
+#### Data Cleaning
+This involves checking for missing values, duplicates and data types. Practices like removing duplicates, imputing missing values using statistical measures such as mean, median and mode are performed on the data. Also, data types are checked to ensure there is consistency.
+#### Descriptive statistics
+#### Exploratory Data Analysis
+This is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
+#### Feature Engineering and Selection
+Here, variable encoding, scaling and selection is performed. Label encoding is conducted on ordinal and/or binary variables, One hot encoding is performed on nominal variables, then a variable importance analysis is performed to select the most important features to be used in a model.
 
 Example of a simple python syntax for encoding and scaling.
 ```
@@ -30,7 +33,7 @@ data_encoded = pd.get_dummies(data, columns = data.columns, drop_first = True).a
 scaler = StandardScaler()
 data = scaler.fit_transform(data)
 ```
-6. Modeling
+#### Modeling
 The best single ML model after the analysis was the XGBoost Classifier. The evaluation metric used was the ROC-AUC score.
 
 Some of the libraries used included:
