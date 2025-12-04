@@ -7,4 +7,26 @@ In East Africa, the financial sector has made significant progress towards finan
 ## Objectives of Study
 
 1. To determine key factors influencing individual bank account ownership.
-2. To compare the predictive power of hybrid ML models to single ML models.
+2. To compare the predictive power of hybrid-based ML models to single ML models.
+
+## ML Practices Performed
+1. Data Cleaning; This involves checking for missing values, duplicates and data types. Practices like removing duplicates, imputing missing values using statistical measures such as mean, median and mode are performed on the data. Also, data types are checked to ensure there is consistency.
+2. Descriptive statistics
+3. Exploratory Data Analysis; this is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
+4. Feature Engineering and Selection; Here, variable encoding, scaling and selection is performed. Label encoding is conducted on ordinal and/or binary variables, One hot encoding is performed on nominal variables, then a variable importance analysis is performed to select the most important features to be used in a model.
+```
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler
+le = LabelEncoder() # for label encoding
+data = le.fit_transform(data)
+data_encoded = pd.get_dummies(data, columns = data.columns, drop_first = True).astype(int) # for one hot encoding
+```
+5. Feature Scaling
+```
+scaler = StandardScaler()
+data = scaler.fit_transform(data)
+```
+
+
+
+
+
