@@ -9,9 +9,9 @@ In East Africa, the financial sector has made significant progress towards finan
 
 ## Project Usage
 
-Banks and government agencies can use these insights to design targeted financial-inclusion strategies focused on groups with lower predicted access to bank accounts. For example, individuals with limited education, informal employment, or no cellphone access appear less likely to be financially included. Tailored outreach—such as simplified account-opening processes, mobile-based banking tools, or fee-free starter accounts—can address these barriers and make financial services more accessible to underserved populations.
+Banks and government agencies can use these insights to design targeted financial-inclusion strategies focused on groups with lower predicted access to bank accounts. For example, individuals with limited education, informal employment, or no cellphone access appear less likely to be financially included. Tailored outreach—such as simplified account-opening processes, mobile-based banking tools, or fee-free starter accounts-can address these barriers and make financial services more accessible to underserved populations.
 
-Policymakers can also leverage the strong influence of job type and education by promoting digital-literacy programs, expanding connectivity, and encouraging employers—especially in the informal sector—to integrate digital payments. Community-based campaigns, partnerships with mobile operators, and support for fintech innovation can further bridge these gaps. By acting on the dominant predictors, institutions can accelerate financial inclusion and build more equitable access to economic opportunities.
+Policymakers can also leverage the strong influence of job type and education by promoting digital-literacy programs, expanding connectivity, and encouraging employers-especially in the informal sector-to integrate digital payments. Community-based campaigns, partnerships with mobile operators, and support for fintech innovation can further bridge these gaps. By acting on the dominant predictors, institutions can accelerate financial inclusion and build more equitable access to economic opportunities.
 
 Also, the results show that the hybrid model (AUC = 0.854) performs far better than the best single model, XGBoost (AUC = 0.665). This large improvement indicates that combining multiple algorithms captures more complex patterns that a single model cannot learn on its own. Overall, the findings strongly support the study objective by demonstrating that hybrid-based ML models offer significantly higher predictive power for bank-account classification.
 
@@ -19,13 +19,9 @@ Also, the results show that the hybrid model (AUC = 0.854) performs far better t
 1. Data Cleaning; This involves checking for missing values, duplicates and data types. Practices like removing duplicates, imputing missing values using statistical measures such as mean, median and mode are performed on the data. Also, data types are checked to ensure there is consistency.
 2. Descriptive statistics
 3. Exploratory Data Analysis; this is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
-An example of a plot from the analysis is as below.
-
-<img width="580" height="502" alt="1012fda5-1023-4c8e-bd89-493ef738cffd" src="https://github.com/user-attachments/assets/7cfb7456-f343-447e-8d86-8d4e4abbce9d"/>
-
-Across the four countries, individuals without formal bank accounts consistently outnumber those who are banked. Rwanda has the highest proportion of unbanked people, followed by Tanzania, then Kenya, and lastly Uganda, reflecting varying levels of financial inclusion across the region. Kenya has the highest number of individuals with bank accounts among the four countries, demonstrating relatively stronger financial inclusion. It is followed by Rwanda, then Tanzania, and finally Uganda, which has the lowest share of banked individuals.
 5. Feature Engineering and Selection; Here, variable encoding, scaling and selection is performed. Label encoding is conducted on ordinal and/or binary variables, One hot encoding is performed on nominal variables, then a variable importance analysis is performed to select the most important features to be used in a model.
 
+Example of a simple python syntax for encoding and scaling.
 ```
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler
 le = LabelEncoder() # for label encoding
@@ -73,7 +69,7 @@ An AUC of 0.842 means the hybrid model can correctly distinguish bankers vs. non
 The SVM-XGBoost Hybrid model recorded an AUC of 0.854, which is an improvement from the AUC recorded by the RF-Logistic regression hybrid model.
 This shows how powerful the combination of  SVM+XGB is in classifying whether an individual has a bank account or not.
 
-7. Variable Importance
+## Variable Importance
 
 <img width="790" height="690" alt="a6f6d35d-87f4-4f06-90ae-f995c7f2b53c" src="https://github.com/user-attachments/assets/855a3675-ab09-4b61-8fff-44a6506938f8" />
 
