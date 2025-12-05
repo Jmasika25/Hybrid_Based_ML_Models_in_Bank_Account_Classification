@@ -21,6 +21,41 @@ This involves checking for missing values, duplicates and data types. Practices 
 #### Descriptive statistics
 #### Exploratory Data Analysis
 This is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
+
+ - Bank Account by Country.
+
+<img width="580" height="502" alt="5999350d-4e67-45d5-966a-4e5030757789" src="https://github.com/user-attachments/assets/11330d8e-2de3-4a10-a81e-2f55e4ff461c" />
+
+Across the four countries, individuals without formal bank accounts consistently outnumber those who are banked. Rwanda has the highest proportion of unbanked people, followed by Tanzania, then Kenya, and lastly Uganda, reflecting varying levels of financial inclusion across the region.
+
+Kenya has the highest number of individuals with bank accounts among the four countries, demonstrating relatively stronger financial inclusion. It is followed by Rwanda, then Tanzania, and finally Uganda, which has the lowest share of banked individuals.
+
+ - Bank Account by Cellphone Access
+
+<img width="630" height="470" alt="99a3d96f-6699-486b-8889-e9fd126f6f7f" src="https://github.com/user-attachments/assets/8be7f16a-7973-4d12-83a1-77fbad6880be" />
+
+It is very evident that access to any cellphone has a significant impact on bank account ownership. Individuals who have access to a cellphone are far more likely to own a bank account compared to those without access.
+
+Despite this, in both categories, individuals without bank accounts still constitute a larger proportion. This may be explained by the widespread use of mobile money services such as M-Pesa, which reduce the immediate need for formal bank accounts.
+
+Example of the Visualizations that we plotted include:
+
+ - Bank account by Level of education
+
+<img width="630" height="470" alt="4cbac4de-ef19-45f0-ae4b-cd321e65cc57" src="https://github.com/user-attachments/assets/8fde5477-8242-4e29-907a-6d74d3d6769b" />
+
+There is a slightly higher number of individuals with bank accounts compared to those without among people with tertiary education and those with vocational or specialized training. This may be because higher levels of education often increase financial literacy and awareness of the benefits of formal banking.
+
+Among individuals with no formal education, primary, or secondary education, those without bank accounts outnumber those who have them. This may be due to lower financial literacy and limited awareness of banking services or lack of formal jobs within these groups.
+
+ - Bank account by Job Type
+
+<img width="630" height="470" alt="236b4ec1-58fa-46f0-9026-d3cfa766db42" src="https://github.com/user-attachments/assets/a298e849-2e19-4faf-9856-5522328025d3" />
+
+Individuals formally employed in the private sector and those employed by the government have higher numbers of bank account ownership compared to those without accounts. This is likely because formal employment often requires salary deposits into bank accounts and provides easier access to financial services.
+
+Individuals who are self-employed, government dependent, informally employed, engaged in farming or fishing, reliant on remittances, have no income, or earn other forms of income tend to have more people without bank accounts than those with accounts. This may be due to irregular or unpredictable income streams, limited access to formal banking, and lower incentives to open accounts.
+
 #### Feature Engineering and Selection
 Here, variable encoding, scaling and selection is performed. Label encoding is conducted on ordinal and/or binary variables, One hot encoding is performed on nominal variables, then a variable importance analysis is performed to select the most important features to be used in a model.
 
