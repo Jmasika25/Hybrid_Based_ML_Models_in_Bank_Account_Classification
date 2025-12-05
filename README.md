@@ -22,6 +22,8 @@ This involves checking for missing values, duplicates and data types. Practices 
 #### Exploratory Data Analysis
 This is the use of visuals to represent the features in the data. Features like location type can be represented using a count plot, Age using a histogram etc. Basically, numerical and continuous variables are represented using either a histogram or a boxplot, numerical but discrete variables are represented using a count plot. Categorical variables are represented using also count plots and bar plots.
 
+Example of the Visualizations that we plotted include:
+
  - Bank Account by Country.
 
 <img width="580" height="502" alt="5999350d-4e67-45d5-966a-4e5030757789" src="https://github.com/user-attachments/assets/11330d8e-2de3-4a10-a81e-2f55e4ff461c" />
@@ -37,8 +39,6 @@ Kenya has the highest number of individuals with bank accounts among the four co
 It is very evident that access to any cellphone has a significant impact on bank account ownership. Individuals who have access to a cellphone are far more likely to own a bank account compared to those without access.
 
 Despite this, in both categories, individuals without bank accounts still constitute a larger proportion. This may be explained by the widespread use of mobile money services such as M-Pesa, which reduce the immediate need for formal bank accounts.
-
-Example of the Visualizations that we plotted include:
 
  - Bank account by Level of education
 
